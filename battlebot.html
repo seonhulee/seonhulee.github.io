@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Battlebot | Seonhu Lee</title>
+<meta name="description" content="3D-printed armor and a ramp for an off-the-shelf RC car. Our team placed 3rd of 25 teams.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Battlebot | Seonhu Lee">
+<meta property="og:description" content="3D-printed armor and a ramp for an off-the-shelf RC car. Our team placed 3rd of 25 teams.">
+<!-- REPLACE_DOMAIN: set these two to your live GitHub Pages URL before sharing -->
+<meta property="og:url" content="https://YOUR-USERNAME.github.io/battlebot.html">
+<meta property="og:image" content="https://YOUR-USERNAME.github.io/assets/img/bot.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%E2%9A%99%EF%B8%8F%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="nav"><div class="wrap nav-in">
+  <a class="brand" href="index.html"><span class="mark" aria-hidden="true">SL</span>Seonhu Lee</a>
+  <nav aria-label="Sections"><a href="index.html#projects">Projects</a><a href="index.html#engine">Engine</a><a href="index.html#semiconductors">Semiconductors</a><a href="index.html#skills">Skills</a></nav>
+  <div class="nav-r"><a class="btn-sm" href="index.html#contact">Contact</a>
+  <button class="icon-btn" id="theme" type="button" aria-label="Switch between light and dark theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M2 12h2M20 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg></button></div>
+</div></header>
+<main>
+<div class="wrap" style="padding-top:28px"><a class="back-link" href="index.html#projects"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5"/></svg>All projects</a></div>
+<section class="sec wrap" id="battlebot" aria-labelledby="bbt">
+  <div class="case-title">
+    <ul class="case-top"><li>Team of five</li><li>ME 210/302</li><li>Nov 2025 to May 2026</li><li>3rd of 25 teams</li></ul>
+    <h2 id="bbt">Battlebot</h2>
+  </div>
+  <div class="split">
+    <div>
+      <p class="lead">We started with an off-the-shelf 4WD RC car under 1 kg and had to add 3D-printed parts that could beat cars built from the same base, inside SPARC safety rules. Our car placed 3rd of 25 teams, and no part broke during the competition.</p>
+      <div class="panel"><h3>My part</h3><p style="margin:0">I modeled the chassis, the front and rear motor covers, the wheel geometry, the battery holder and a new base in SolidWorks. When parts didn’t fit, I re-measured the car and revised the dimensions.</p></div>
+    </div>
+    <figure><img src="assets/img/bot.jpg" alt="The finished battlebot on a table: a white printed cover, green tire protectors, a grey ramp at the rear and blades at the front" loading="lazy" decoding="async" data-zoom><figcaption>The car as we ran it: printed cover, green rear tire protectors, a ramp and blades on the stock chassis.</figcaption></figure>
+  </div>
+
+  <div class="sub">
+    <h3>How the design changed</h3>
+    <p class="muted">Drag the handle to compare our first CAD with the car we ran on fight day. Every change came from test driving or FEA.</p>
+    <div class="grid2" style="align-items:start">
+      <div class="compare" id="compare">
+        <img src="assets/img/cadf.jpg" alt="Final CAD model of the battlebot with the ramp at the rear" loading="lazy" decoding="async">
+        <img class="over" src="assets/img/cadi.jpg" alt="Initial CAD model of the battlebot with the ramp at the front" loading="lazy" decoding="async">
+        <span class="tag l">First design</span><span class="tag r">Fight day</span>
+        <input type="range" min="0" max="100" value="50" aria-label="Compare the first design with the fight-day design">
+        <div class="bar2" aria-hidden="true"></div>
+      </div>
+      <ul class="changes">
+        <li><b>Ramp moved to the rear</b><span>At the front its weight made the car drag. At the rear, steering stays free.</span></li>
+        <li><b>Larger wheel cutouts</b><span>Side pieces removed and 70 × 70 mm cutouts added at the front wheels, which were dragging.</span></li>
+        <li><b>Glued tire protectors</b><span>Cut from four to two and glued instead of bolted, after FEA showed stress at the bolt holes.</span></li>
+        <li><b>Blades at the front</b><span>Moved from the sides to the front and set vertically, where they cushion hits and catch opponents.</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="sub">
+    <h3>Parts I modeled</h3>
+    <p class="muted">Each part was modeled in SolidWorks and dimensioned to fit the stock car.</p>
+    <div class="grid2">
+      <figure><img src="assets/img/swr.jpg" alt="SolidWorks model of the rear motor protector" loading="lazy" decoding="async" data-zoom><figcaption>Rear motor protector, the most complex part, with 20+ sketched and cut features.</figcaption></figure>
+      <figure><img src="assets/img/swf.jpg" alt="SolidWorks model of the front motor protector" loading="lazy" decoding="async" data-zoom><figcaption>Front motor protector: one boss, seven cuts and three fillets.</figcaption></figure>
+      <figure><img src="assets/img/swb.jpg" alt="SolidWorks model of the battery holder" loading="lazy" decoding="async" data-zoom><figcaption>Battery holder: an open-top tray with a filleted pocket and side slots.</figcaption></figure>
+      <figure class="fit"><img src="assets/img/nbase.jpg" alt="SolidWorks model of the new base: a shallow octagonal tray with two rods through a block at one end" loading="lazy" decoding="async" data-zoom><figcaption>New base: a shallow octagonal tray with two rods through a block at one end, built from five boss and nine cut features with toleranced dimensions.</figcaption></figure>
+    </div>
+  </div>
+
+  <div class="sub">
+    <h3>Checking the design</h3>
+    <div class="grid2">
+      <figure class="fit"><img src="assets/img/fea.jpg" alt="SolidWorks von Mises stress plot of the rear motor protector, with the highest stress in two slender arms" loading="lazy" decoding="async" data-zoom><figcaption>Static FEA on the rear motor protector at 300 psi: stress peaks near 19 MPa in the slender arms and stays low in the main body.</figcaption></figure>
+      <figure class="tall"><img src="assets/img/drr.jpg" alt="Engineering drawing of the rear motor protector with views, datums A, B and C, and a position tolerance" loading="lazy" decoding="async" data-zoom><figcaption>The part’s drawing, with datums A, B and C and a 0.005 position tolerance.</figcaption></figure>
+    </div>
+  </div>
+
+  <dl class="specs">
+    <div><dt>Base vehicle</dt><dd>Rhybor 4WD off-road RC car</dd></div>
+    <div><dt>Made from</dt><dd>3D-printed PLA and PETG</dd></div>
+    <div><dt>Added mass (estimate)</dt><dd>About 0.9 kg across 4 parts</dd></div>
+    <div><dt>Tools</dt><dd>SolidWorks CAD, drawings, FEA</dd></div>
+  </dl>
+</section>
+
+
+</main>
+<footer><div class="wrap"><span>Seonhu Lee</span><span>University of Texas at Austin, Mechanical Engineering</span></div></footer>
+
+<dialog id="lb" aria-label="Enlarged image"><button type="button" id="lbx">Close</button><img alt="" id="lbi"><p id="lbc"></p></dialog>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
